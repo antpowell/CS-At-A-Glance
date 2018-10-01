@@ -4,14 +4,14 @@
 
 ### Arrray
 
-1. Contigouse block of memeory.
+1. Contiguous block of memory.
 2. All same size.
 3. 0 base indexing.
 4. Lookup by index O(1).
 5. Lookup by value O(n).
 6. Append to simple array O(n), because of copy.
 7. Prepend to simple array O(n), because of copy.
-8. Insertsion into simple array O(n), because of copy.
+8. Insertion into simple array O(n), because of copy.
 9. Remove into simple array O(n), because of copy.
 
 #### GOOD FOR
@@ -96,6 +96,7 @@ Priority Que implementation.
 - Brute Force
   1. Solve for base case
   2. Solve for individual problem
+  3. Individual problems to repeat reducing the problem to simpler forms until base case is met
   - Python
     ```python
     def fib(n):
@@ -164,36 +165,37 @@ Priority Que implementation.
     };
     ```
 
-- Tail Call Optimization
+#### Tail Call Optimization(TCO)
 
-  1.
+1. Recursive calling function must not include manipulating the data
 
-  - Python
+- Python
 
-    ```python
-    def fib(n):
-      def fib_inner(n, first, second):
-        if n == 0:
-          return first
-        if n == 1:
-          return second
-        return fib_inner(n, first+second, second)
+  ```python
+  def fib(n):
+    def fib_inner(n, first, second):
+      if n == 0:
+        return first
+      if n == 1:
+        return second
+      # notice second call
+      return fib_inner(n, first+second, second)
 
-      return fib_inner(n, 0, 1);
+    return fib_inner(n, 0, 1);
+  ```
 
-    ```
+- Javascript
 
-  - Javascript
-    ```javascript
-    const fib = function(n) {
-    	const fib_inner = function(n, first, second) {
-    		if (n === 0) return first;
-    		if (n === 1) return second;
-    		return fib_inner(n, first + second, second);
-    	};
-    	return fib_inner(n, 0, 1);
-    };
-    ```
+  ```javascript
+  const fib = function(n) {
+  	const fib_inner = function(n, first, second) {
+  		if (n === 0) return first;
+  		if (n === 1) return second;
+  		return fib_inner(n, first + second, second);
+  	};
+  	return fib_inner(n, 0, 1);
+  };
+  ```
 
 - Closed Form Expression
   - Python
