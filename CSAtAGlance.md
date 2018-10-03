@@ -16,7 +16,7 @@
 
 #### GOOD FOR
 
-When constant lookup is needed and an index is avaliable.
+When constant lookup is needed and an index is available.
 
 #### NOT GOOD FOR
 
@@ -91,7 +91,7 @@ Priority Que implementation.
 
 ### Recursion/TCO
 
-#### Fibanocci: API-preserving wrapper
+#### Fibonacci: API-preserving wrapper
 
 - Brute Force
   1. Solve for base case
@@ -275,7 +275,7 @@ $$
 
 ### Higher Order Functions
 
-### Concurrency/Parrallelism
+### Concurrency/Parallelism
 
 ### Pass By Reference, Pass By Value
 
@@ -285,7 +285,7 @@ $$
 
 ### Immutability
 
-### Functinal
+### Functional
 
 ### Base 2, 8, 10, 16
 
