@@ -22,14 +22,14 @@ When constant lookup is needed and an index is avaliable.
 
 ### Dynamic Array
 
-1. Contigouse block of memeory.
+1. Contiguous block of memory.
 2. All same size.
 3. 0 base indexing.
 4. Lookup by index O(1).
 5. Lookup by value A(1).
 6. Append to simple array A(1).
 7. Prepend to simple array O(n).
-8. Insertsion into simple array O(n).
+8. Insertion into simple array O(n).
 9. Remove into simple array A(1).
 
 #### GOOD FOR
@@ -38,7 +38,7 @@ Instances where you don't know how much space you will have or need.
 
 #### NOT GOOD FOR
 
-Saftey Critical Real Time, because of the instances when O(n) hits.
+Safety Critical Real Time, because of the instances when O(n) hits.
 
 ### List
 
@@ -51,7 +51,7 @@ Saftey Critical Real Time, because of the instances when O(n) hits.
    5. Insert in between list O(n), **(general case)**.
    6. Insert in between list O(1), **(if given pointer to exact node)**.
 
-2. Doubley
+2. Doubly
 
 ### Stack
 
